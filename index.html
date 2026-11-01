@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matrix Hacker Saver</title>
+<style>
+  :root { --bg:#000; --fg:#00ff46; --dim:#0a7a2a; --panel:#021208; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:Consolas,"Courier New",monospace; line-height:1.6; }
+  main { max-width:780px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:2rem; margin:0 0 4px; text-shadow:0 0 10px var(--fg); }
+  h2 { margin-top:36px; border-bottom:1px solid var(--dim); padding-bottom:4px; }
+  p, li { color:#9dffb8; }
+  .tag { color:var(--dim); }
+  pre { background:var(--panel); border:1px solid var(--dim); padding:12px; overflow-x:auto; color:var(--fg); }
+  a { color:var(--fg); }
+  footer { margin-top:40px; color:var(--dim); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Matrix Hacker Saver</h1>
+  <p class="tag">// Windows icin Matrix tarzi ekran koruyucu</p>
+
+  <p>Siyah zeminde yukaridan asagi akan yesil Matrix kodlari ve ekranin altinda akip giden, hacker filmlerindeki konsol cikti taklidi. Tamamen gorsel amaclidir; <strong>gercek bir saldiri veya tarama yapmaz</strong>, agla hicbir baglantisi yoktur.</p>
+
+  <h2>Ozellikler</h2>
+  <ul>
+    <li>Rakam, harf ve katakana karakterlerinden olusan yagmur efekti</li>
+    <li>Sahte <code>msf6 &gt;</code> / <code>[+]</code> / <code>[*]</code> tarzi terminal satirlari</li>
+    <li>Birden fazla monitor destegi</li>
+    <li>Fare, klavye veya tiklama ile kapanir</li>
+    <li>Tek dosya, ek kurulum gerektirmez (.NET Framework)</li>
+  </ul>
+
+  <h2>Kurulum</h2>
+  <ol>
+    <li><a href="https://github.com/elcigil/matrix-hacker-saver/releases/latest">Releases</a> sayfasindan <code>MatrixSaver.scr</code> dosyasini indir.</li>
+    <li>Sag tikla &rarr; <strong>Test</strong> ile dene.</li>
+    <li><strong>Install</strong> de veya dosyayi <code>C:\Windows\System32</code> icine kopyala.</li>
+    <li>Ayarlar &rarr; Kisisellestirme &rarr; Kilit ekrani &rarr; Ekran koruyucu bolumunden sec.</li>
+  </ol>
+
+  <h2>Kaynaktan derleme</h2>
+<pre>csc /target:winexe /out:MatrixSaver.scr ^
+    /r:System.Windows.Forms.dll /r:System.Drawing.dll MatrixSaver.cs</pre>
+  <p><code>csc.exe</code> Windows ile gelir: <code>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\</code></p>
+
+  <h2>Ozellestirme</h2>
+  <p><code>MatrixSaver.cs</code> icindeki <code>Lines</code> dizisini duzenleyerek terminalde akan satirlari degistirebilirsin. Karakter seti <code>Glyphs</code>, hiz ve uzunluk <code>NewDrop</code> icinde.</p>
+
+  <h2>Lisans</h2>
+  <p>Kaynak kodlar <strong>MIT Lisansi</strong> ile yayinlanmistir. Isteyen kullanabilir, degistirebilir ve dagitabilir. Ayrintilar icin <a href="LICENSE">LICENSE</a> dosyasina bak.</p>
+
+  <footer>&copy; 2026 elcigil &middot; MIT</footer>
+</main>
+</body>
+</html>
