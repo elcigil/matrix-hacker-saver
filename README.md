@@ -5,8 +5,9 @@ Windows için Matrix tarzı ekran koruyucu: yukarıdan akan yeşil kodlar ve hac
 Ayrıntılı açıklama için [index.html](index.html) dosyasına bakın.
 
 ## Kurulum
-1. [Releases](../../releases/latest) sayfasından `MatrixSaver.scr` dosyasını indirin.
-2. Sağ tık → **Test** ile deneyin, **Install** ile kurun.
+1. [Releases](../../releases/latest) sayfasından `MatrixSaverSetup.exe` dosyasını indirip çalıştırın (yönetici izni gerekmez).
+2. Kaldırmak için: `%LOCALAPPDATA%\MatrixHackerSaver\Uninstall.exe /uninstall`
+3. Elle kurulum: `MatrixSaver.scr` → sağ tık → **Install**.
 
 ## Derleme
 ```
